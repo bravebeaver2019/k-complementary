@@ -12,26 +12,28 @@ Please, run the following command
 ### Running application
 Please, run the following command specifying a string argument
 ```bash
-TODO
+./k-complementary
 
 ```
 
 ### Comments and improvements
-* On first attemptTODO
+* On first attempt a simple nested loop was implemented
 
-
-[Palindrome.java#10](src/main/java/com/test1/palindrome/Palindrome.java)
+see
+[https://github.com/bravebeaver2019/k-complementary/commit/c8a1c9111c04a03009b8511bdc733d64445c18b8#diff-109e14a77a752f773331bef94acafc02]
 ```java
-    for(int i=0; i<length; i++)
+    int count = 0;
+    for (int i = 0; i <= array.length - 1; i++) {
+        for (int j = 0; j <= array.length - 1; j++) {
+            if (i!=j && array[i] + array[j] == k) {
+                count++;
+            }
+        }
+    }
+    return count / 2;
 ```
 
 * On a second approach TODO
-
-
-[Palindrome.java#10](src/main/java/com/test1/palindrome/Palindrome.java)
-```java
-    for(int i=0; i<length / 2; i++)
-```
 
 ### Alternatives considered
 * TODO

@@ -18,7 +18,7 @@ public class KComplementaryApplication {
 		SpringApplication.run(KComplementaryApplication.class, args);
 	}
 
-	@Autowired @Qualifier("v0")
+	@Autowired
     KComplementary complementaryV0;
 
 	@Bean
