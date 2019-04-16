@@ -28,12 +28,18 @@ public class KComplementaryTest {
         assertEquals(15, k.countComplementaries(new int[]{0,0,0,0,1,0,0}, 0));
     }
 
-    @Test public void testKComplementaryZerosArray() {
+    @Test public void testKComplementaryZeroesArray() {
         assertEquals(0, k.countComplementaries(new int[]{0,0,0,0,0,0,0}, 1));
+    }
+
+    @Test public void testKComplementaryZeroesAndMoreZeroes() {
+        assertEquals(21, k.countComplementaries(new int[]{0,0,0,0,0,0,0}, 0));
     }
 
     @Test public void testKComplementaryNegative() {
         assertEquals(1, k.countComplementaries(new int[]{-1,2,5}, 4));
         assertEquals(0, k.countComplementaries(new int[]{-1,2,5}, 5));
+        assertEquals(16, k.countComplementaries(new int[]{-1,1,-1,1,-1,1,-1,1}, 0));
+        assertEquals(1, k.countComplementaries(new int[]{1,-2,-5}, -4));
     }
 }

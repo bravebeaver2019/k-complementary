@@ -13,10 +13,9 @@ public class KComplementary {
             for (int j = 0; j <= array.length - 1; j++) {
                 if (i!=j && array[i] + array[j] == k) {
                     count++;
-                    //log.debug(i + ":" + j);
                 }
             }
         }
-        return count / 2; // counts duplicates
+        return count / 2;
     }
 }

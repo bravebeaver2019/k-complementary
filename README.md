@@ -33,18 +33,13 @@ see
     return count / 2;
 ```
 
-* On a second approach TODO
-
 ### Alternatives considered
-* TODO
-
-
 
 ### Comments and result
-TODO
+First approach has to loop over the whole array for each elements which leads to an O(n^2) complexity.
+Even if we improved the algorithm by not chacking twice the comparisons already done the algorithm would have little
+improvement in terms of efficiency.
 
 
 ### Things to do
-TODO
-
 
