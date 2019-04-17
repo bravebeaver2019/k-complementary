@@ -48,7 +48,11 @@ hash access is based on index.
 Of course it will have impact in memory but will reduce complexity and process time.
 lets give a try.
 The problem is that I cant know if the number I am looking for is the same number I am now, for example, given the array {2} with k=4, this algorithm returns 1,
-or worst the array {2,2,2,2} with k=4 returns 16! I couldnt workaround this problem :(
+or worst the array {2,2,2,2} with k=4 returns 16!
+
+Update: I managed to fix thi issue, however the resulting algorithm didnt handle properly the situation when duplicate pairs i,j were present, I have isolated this in the test
+testKComplementaryDuplicates.
+As long as I coundt finish the improvement I consider this trial failed :( I levae the code in a separate method countComplementariesTrial for illustration.
 
 ### Comments and result
 First approach has to loop over the whole array for each elements which leads to an O(n^2) complexity.
@@ -58,3 +62,4 @@ improvement in terms of efficiency.
 
 ### Things to do
 
+As I mentioned before the complexity O(n^2) could be improved by a better algorithm, probably up to O(n) at a higher memory cost.
