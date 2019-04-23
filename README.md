@@ -1,7 +1,7 @@
 # Getting Started
 
 ### Prerequisites
-In order to run this program, a java runtime environment must be installed (tested with version 8).
+In order to run this program, a java runtime environment must be installed (tested with version 10).
 
 ### Building application
 Please, run the following command
